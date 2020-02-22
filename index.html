@@ -1,6 +1,6 @@
 ---
 layout: default
-title: The Sheep Vote
+title: Le Barbare
 ---
 <header>
 	<div class="container">
@@ -9,7 +9,7 @@ title: The Sheep Vote
 				<h1 class="editable">Le Barbare vanno in Mongolia</h1>
 				<p class="editable">Bisogna contribuire</p>
 				<div class="button">
-					<a href="#donate">Donate Now</a>
+					<a href="#donate">Fai una donazione</a>
 				</div>
 			</div>
 		</div>
@@ -25,20 +25,20 @@ title: The Sheep Vote
 	<ul class="thirds">
 		<li>
 			<div class="image">{% include icons/site.html icon="population" %}</div>
-			<h3 class="editable">Unisciti al team</h3>
-			<p class="editable">Il team delle Barbare si sta allargando. Che devi fare questa estate? Per proporre una candidatura scrivi a <a href="mailto:mongolbarbare@gmail.com"> mongolbarbare@gmail.com</a></p>
+			<h3 class="editable">Unisciti alle Barbare</h3>
+			<p class="editable">Il team delle Barbare si sta allargando. Se anche tu ti senti una Barbara <a href="mailto:mongolbarbare@gmail.com"> scrivici</a>.</p>
 		</li>
 
 		<li>
 			<div class="image">{% include icons/site.html icon="economy" %}</div>
 			<h3 class="editable">Dona</h3>
-			<p class="editable">Ancora non lo hai fatto? Il Mongol Rally ha come obbiettivo raccogliere fondi per coolearth.org. Non si va in Mongolia per nulla. </p>
+			<p class="editable">Ancora non lo hai fatto? Il Mongol Rally ha come obbiettivo raccogliere fondi per coolearth.org e portare ecografi per diagnosi dove ce ne è bisogno. Non si va in Mongolia per nulla. </p>
 		</li>
 
 		<li>
 			<div class="image">{% include icons/site.html icon="conditions" %}</div>
 			<h3 class="editable">Sponsorizza</h3>
-			<p class="editable">Le Barbare hanno bisogno di mezzi tecnici. Hai un attività? Lecita o illecita, personale o impersonale, profit o nom-profit, non importa. Puoi fornire mezzi e ricevere enorme visibilità. Per info leggi qui o scrivici</p>
+			<p class="editable">Le Barbare hanno bisogno di mezzi tecnici. Hai un attività? Lecita o illecita, personale o impersonale, profit o nonprofit, non importa. Puoi fornire mezzi e ricevere enorme visibilità. Per info <a href="/sponsor"> leggi qui </a> o <a href="mailto:mongolbarbare@gmail.com"> scrivici</a>.</p>
 		</li>
 	</ul>
 </div>
@@ -51,7 +51,7 @@ title: The Sheep Vote
 		<div>
 			<h2 class="editable">La Missione</h2>
 
-			<p class="editable">Arrivare in mongolia. Ubaltador per la precisione. Un mezzo a quattro ruote con cilindrata inferiore a 1000cc. Una traiettoria di viaggio incerta. Uniche regole sono quelle della Zingarata. Alzare fondi per CoolEarth.org, ... , e . Portare almeno un ecografo all'ospedale di </p>
+			<p class="editable">Arrivare in mongolia. Diecimila miglia tra montagne, deserti e steppa, con un mezzo a quattro ruote di cilindrata inferiore a 1000cc. Nessuna assistenza. Una traiettoria di viaggio incerta. Uniche regole sono quelle della Zingarata. Raccogliere fondi per CoolEarth.org e portare (almeno) un ecografo per diagnosi  </p>
 		</div>
 	</div>
 </div>
@@ -99,9 +99,9 @@ title: The Sheep Vote
 					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
 					<div class="post-content">
 						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
-						<h3> <a href="/about">{{ post.title }}</a/></h3>
-						<a href="/about" > Leggi </a>
-						<!-->{{ post.content }}-->
+						<h3> <a href="{{ post.url }}">{{ post.title }}</a/></h3>
+						<p>{{ post.excerpt }} <a href="{{post.url}}"> Leggi--> </a/> </p>
+						
 						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
 					</div>
 				</div>
